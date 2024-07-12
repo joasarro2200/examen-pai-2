@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="html">
+  <head>
+    <title>Exam</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <script>
+      function startAnimation() {
+        const boxAction = document.querySelector(".boxAction");
+        boxAction.style.animation = "moveAndChangeColor 5s infinite";
+      }
+    </script>
+    <nav>
+      <a href="#beginSection">INICIO</a> | <a href="#shakeSection">SHAKE</a> |
+      <a href="#transicionSection">TRANSICIÓN</a> |
+      <a href="#actionSection">ACCION</a> |
+      <a href="#contactSection">CONTACTO</a> |
+    </nav>
+    <div class="mainLayout">
+      <div id="beginSection" class="beginSection"></div>
+      <div id="shakeSection" class="section">
+        <h2>SHAKE</h2>
+        <div class="boxes">
+          <div class="singleBoxContainer">
+            <div class="firstBox"></div>
+            <span>Este objeto amarillo dice que no.</span>
+          </div>
+          <div class="singleBoxContainer">
+            <div class="secondBox"></div>
+            <span>Este objeto azul dice que si.</span>
+          </div>
+        </div>
+      </div>
+      <div id="transicionSection" class="section">
+        <h2>TRANSICIÓN</h2>
+        <div class="boxTransition"></div>
+        <span
+          >Pase el mouse sobre este objeto y crecerá del 50% al 100% en 10
+          segundos.</span
+        >
+      </div>
+      <div id="actionSection" class="section">
+        <h2>ACCIÓN</h2>
+        <button onclick="startAnimation()" class="boxAction"></button>
+      </div>
+      <div id="contactSection" class="section">
+        <div class="contactContainer">
+          <form>
+            <h2>CONTACTO</h2>
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" />
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" />
+            <label for="comments">Comentarios</label>
+            <textarea
+              rows="4"
+              cols="50"
+              id="comments"
+              name="comments"
+            ></textarea>
+            <button type="submit">Enviar</button>
+          </form>
+          <iframe
+            src="https://g.co/kgs/oR9Sukv"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+      <div class="footer">Joaquin Sarro | PAI 2</div>
+    </div>
+  </body>
+</html>
